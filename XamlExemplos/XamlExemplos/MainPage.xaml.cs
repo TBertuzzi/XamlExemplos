@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using XamlExemplos.ViewModels;
 
 namespace XamlExemplos
 {
@@ -12,6 +13,8 @@ namespace XamlExemplos
 		public MainPage()
 		{
 			InitializeComponent();
+
+            BindingContext = new MainViewModel();
 		}
 	}
 }

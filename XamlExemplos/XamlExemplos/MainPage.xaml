@@ -2,10 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XamlExemplos"
-             x:Class="XamlExemplos.MainPage">
+             x:Class="XamlExemplos.MainPage" Padding="0,20,0,0">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout>
+        <Label Text="{Binding Nome,StringFormat='O {0} Faz muita gambi !'}" />
+        <Label Text="{Binding Data,StringFormat='{0:dd MM,yyyy}'}" />
+        <Label Text="O Valerio curte muito MVVM Cross &#10; Mas ama mesmo o Prism 7 &#128525;" HorizontalTextAlignment="Center"></Label>
+    </StackLayout>
+   
+    
 
 </ContentPage>
